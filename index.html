@@ -16,16 +16,26 @@
       rel="stylesheet"
     />
 
+     <!-- Modern-normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
     <!--style-->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
-    <header>
-      <nav class="nav">
+    <header class="header">
+      <div class="container header-container">
         <a class="nav-logo link" href="./index.html" lang="en">
-          <span class="logo-span">Web</span>Studio</a
-        >
+          <span class="logo-span">Web</span>Studio</a>
+
+        <nav class="nav">
         <ul class="nav-list list">
           <li><a class="nav-link-current link" href="./index.html">Студія</a></li>
           <li><a class="nav-link link" href="./portfolio.html">Портфоліо</a></li>
@@ -34,20 +44,27 @@
       </nav>
 
       <ul class="contacts list">
-        <li
-          ><a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li
-        >
+        <li>
+          <a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
         <li><a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
+      </div>
     </header>
 
     <main>
       <section class="cap">
+        <div class="container container-cap">
+         <div class="cap-title-h">           
         <h1 class="cap-title">Ефективні рішення для вашого бізнесу</h1>
+        </div>
         <button class="cap-btn" type="button">Замовити послугу</button>
+          
+        </div>
       </section>
 
       <section class="specificity">
+        <div class="container"> 
         <h2 class="specificity-title visually-hidden">Особливості</h2>
         <ul class="specificity-list list">
           <li>
@@ -57,27 +74,29 @@
             >
           </li>
           <li>
-            <h3 class="specificity-subject">ПУНКТУАЛЬНІСТЬ</h3>
+            <h3 class="specificity-subject">Пунктуальність</h3>
             <p class="specificity-subtitle"
               >Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p
             >
           </li>
           <li>
-            <h3 class="specificity-subject">ПЛАНУВАННЯ</h3>
+            <h3 class="specificity-subject">Планування</h3>
             <p class="specificity-subtitle"
               >Так само консультація з широким активом значною мірою зумовлює.</p
             >
           </li>
           <li>
-            <h3 class="specificity-subject">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <h3 class="specificity-subject">Сучасні технології</h3>
             <p class="specificity-subtitle"
               >Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p
             >
           </li>
         </ul>
+      </div>
       </section>
 
-      <section class="work">
+      <section class="work section">
+        <div class="container container-work">
         <h2 class="work-title">Чим ми займаємося</h2>
         <ul class="work-list list">
           <li>
@@ -100,72 +119,84 @@
             <img src="./images/img-3.jpg" alt="розробляємо дзайн" width="370" height="294" />
           </li>
         </ul>
+      </div>
       </section>
 
-      <section class="command">
+      <section class="command section">
+        <div class="container">
         <h2 class="command-title">Наша команда</h2>
         <ul class="command-list list">
           <li class="command-item">
-            <img
+            <img class="command-item-img"
               src="./images/foto-igor.jpg"
               alt="фото дизайнер продукта"
               width="270"
               height="260"
             />
+            <div class="command-caption-heading">
             <h3 class="command-caption">Ігор Дем'яненко</h3>
             <p class="command-heading">Product Designer</p>
+            </div>
           </li>
 
           <li class="command-item">
-            <img
+            <img class="command-item-img"
               src="./images/foto-olga.jpg"
               alt="фото фронтенд разроботчик"
               width="270"
               height="260"
             />
+            <div class="command-caption-heading"> 
             <h3 class="command-caption">Ольга Рєпіна</h3>
-            <p class="command-heading">Frontend Developer</p>
+            <p class="command-heading">Frontend Developer</p></div>
           </li>
 
           <li class="command-item">
-            <img src="./images/foto-mikola.jpg" alt="фото маркетолог" width="270" height="260" />
+            <img class="command-item-img"
+            src="./images/foto-mikola.jpg" alt="фото маркетолог" width="270" height="260" />
+            <div class="command-caption-heading"> 
             <h3 class="command-caption">Микола Тарасов</h3>
-            <p class="command-heading">Marketing</p>
+            <p class="command-heading">Marketing</p></div>
           </li>
 
           <li class="command-item">
-            <img
+            <img class="command-item-img"
               src="./images/foto-mihail.jpg"
               alt="фото дизайнер іртерфейсу"
               width="270"
               height="260"
             />
+            <div class="command-caption-heading">  
             <h3 class="command-caption">Михайло Єрмаков</h3>
             <p class="command-heading">UI Designer</p>
+            </div>
           </li>
         </ul>
+      </div>
       </section>
     </main>
 
-    <footer>
-      <div class="footer">
+    <footer class="footer-section">
+      <div class="container footer-container">
+      
         <a class="logo-footer link" href="./index.html" lang="en">
           <span class="logo-span">Web</span>Studio</a
         >
 
         <address>
           <ul class="address-list list">
-            <li><a class="address-link link" href="">м. Київ, пр-т Лесі Українки, 26</a></li>
-            <li
-              ><a class="address-contact-link link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              ></li
-            >
-            <li
-              ><a class="address-contact-link link" href="tel:+380961111111"
+            <li>
+              <a class="address-link link" href="">м. Київ, пр-т Лесі Українки, 26</a>
+            </li>
+            <li>
+              <a class="address-contact-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a>
+            </li>
+            <li>
+              <a class="address-contact-link link" href="tel:+380961111111"
                 >+38 096 111 11 11</a
-              ></li
-            >
+              >
+            </li>
           </ul>
         </address>
       </div>
