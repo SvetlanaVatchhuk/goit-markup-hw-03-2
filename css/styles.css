@@ -231,16 +231,16 @@ img {
 
 /* Секция  Ефективні рішення для вашого бізнесу с кнопкой*/
 .cap {
-  background: var(--bg-accent-color);
   padding-top: 200px;
   padding-bottom: 200px;
   padding-right: 0;
   padding-left: 0;
   text-align: center;
+
+  background: var(--bg-accent-color);
 }
 
 .cap-title {
-  
   margin-right: auto;
   margin-left: auto;
   margin-top: 0;
@@ -255,7 +255,7 @@ img {
   color: var(--secondary-text-color);
 }
 .cap-btn {
-  display: block;
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
 
@@ -437,15 +437,15 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-
+  align-items: center;
   justify-content: center; 
 }
 
 .picture-img {    /* li с фото h2 и p */
   background: var(--bg-body-color);
   
-  
-  flex-basis: calc((100% - 60px) / 3);
+  border: 1px solid #EEEEEE;
+  width: calc((100% - 60px) / 3);
 
 }
 .picture-title-subtitle{  /*блок h2 и p */
@@ -453,7 +453,7 @@ img {
  padding-bottom: 20px;
  padding-left: 24px;
  padding-right: 24px;
- border: 1px solid #EEEEEE;
+ 
 }
 .picture-title {   /*h2*/
   margin-bottom: 4px;
